@@ -1,0 +1,8 @@
+node_modules/
+build/
+.gradle/
+.kotlin/
+dist/
+*.log
+Thumbs.db
+.DS_Store

@@ -1,0 +1,52 @@
+{
+  "id": "qqdm",
+  "name": "Obisidian QQClaw Channel",
+  "version": "0.1.0",
+  "description": "easycode QQClaw channel plugin that bridges QQ direct messages over WebSocket for OpenClaw.",
+  "channels": [
+    "qqdm"
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "bindHost": {
+        "type": "string"
+      },
+      "bindPort": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 65535
+      },
+      "sharedSecret": {
+        "type": "string"
+      },
+      "defaultAgentId": {
+        "type": "string"
+      },
+      "sessionPrefix": {
+        "type": "string"
+      },
+      "accounts": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "accountId": {
+              "type": "string"
+            },
+            "enabled": {
+              "type": "boolean"
+            },
+            "label": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "author": "Obisidian",
+  "organization": "easycode"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ink.easycode.qqclaw",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "ws": "^8.19.0"
+  },
+  "openclaw": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "description": "Obisidian easycode QQClaw channel plugin for OpenClaw QQ direct-message bridging.",
+  "author": "Obisidian",
+  "organization": "easycode"
+}
